@@ -24,7 +24,7 @@ jobs:
         
       # Build
       - name: Make gradlew executable
-        run: chmod +x ./gradlew
+        run: chmod +x ./gradlew clean shadowJar
       - name: Build with Gradle
         run: ./gradlew build
       - name: capture build artifacts
